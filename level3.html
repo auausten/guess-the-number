@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guess the number game</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind&Vadodara=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="mainpage">
+            <h1>Guess the Number</h1>
+            <p><u>How to play</u></p>
+            <p>Put in your guess into the textbox. If your answer is too high, a text will appear saying 'Your guess is too high! Guess lower.' If your answer is too low, a text will appear saying 'Your guess is too low! Guess higher.'</p>
+            <br>
+            <button id="startBtn" onclick="startGame()" type="button">Start the Game</button>
+            <br><br>
+            <p>Guess a number between 1 and 1000</p>
+            <input id="userInput" disabled="disabled" type="number">
+            <br><br>
+            <button id="guessBtn" onclick="checkNumber()" disabled="disabled" type="button">Guess</button>
+            <u><p>Result</p></u>
+            <p id="result">The result should be displayed here</p>
+            <br>
+            <u><p>Number of guesses</p></u>
+            <p id="numberOfGuesses">The number of guesses should be displayed here</p>
+            <br>
+            <u><p>List of numbers guessed</p></u>
+            <p id="numbersWereGuessed">The numbers you have guessed should be displayed here</p>
+            <br>
+            <a href="index.html"><h2>Go back to homescreen</h2></a>
+            <script src="game3.js"></script>
+        </div>
+    </body>
+</html>
